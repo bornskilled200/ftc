@@ -3,6 +3,7 @@ A command line tool that allows you to
 - discover samantha modules
 - retrieve general information
 
-# Requirements
+# How to Build
+## Requirements
 - CMake
 - libuv
