@@ -3,7 +3,7 @@ project(ftc C)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
-set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 
 set(SOURCE_FILES main.c)
 add_executable(ftc ${SOURCE_FILES})
