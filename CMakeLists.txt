@@ -9,4 +9,6 @@ set(SOURCE_FILES main.c)
 add_executable(ftc ${SOURCE_FILES})
 
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc")
-target_link_libraries(ftc libuv.a libws2_32.a libpsapi.a libiphlpapi.a)# -lshell32)
+if (WIN32)
+    target_link_libraries(ftc libuv.a libws2_32.a libpsapi.a libiphlpapi.a)
+endif(WIN32)
